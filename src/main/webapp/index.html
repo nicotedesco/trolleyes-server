@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
+        <link href="bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container" align="center">
+            <h2 class="form-signin-heading">Carrito</h2>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=usuario&op=login&user=nico&pass=68474cd011f1a309669f4fe22138a2c5d841b143695a4134ba6f85b0b6ddc445'>Login</a> 
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=producto&op=getpage&np=1&rpp=3'>Productos</a>
+            </button>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=pedido&op=getpage&np=1&rpp=10'>Pedidos</a>
+            </button><br><br>
+            <button>
+                <a href='http://localhost:8081/trolleyes-server/json?ob=carrito&op=add&id=1&cantidad=5'>Añadir al carrito 5 de producto 1</a>
+            </button>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=carrito&op=add&id=2&cantidad=6'>Añadir al carrito 6 de producto 2</a>
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=carrito&op=list'>Listar carrito</a>
+            </button>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=carrito&op=empty'>Vaciar carrito</a>
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=carrito&op=buy'>Comprar</a>
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=pedido&op=get&id=4'>Pedido creado</a>
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=linea_pedido&op=getpagex&np=1&rpp=3&id_foreign=4&ob_foreign=pedido'>Linea de pedido</a>
+            </button><br><br>
+            <button>
+                    <a href='http://localhost:8081/trolleyes-server/json?ob=usuario&op=logout'>Logout</a>
+            </button>
+        </div>
+    </body>
+</html>
